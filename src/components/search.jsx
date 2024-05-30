@@ -19,13 +19,13 @@ function Search({ cb = Function.prototype }) {
                 <input
                     type="search"
                     id="search-field"
-                    placeholder="Search"
+                    placeholder="Krabby Patty..."
                     onKeyDown={handleKey}
                     onChange={(e) => setValue(e.target.value)}
                     value={value}
                 />
                 <button
-                    className="btn"
+                    className="btn light-blue"
                     style={{
                         position: "absolute",
                         top: 0,
