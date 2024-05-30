@@ -19,16 +19,23 @@ function Recipe() {
                 <Preloader />
             ) : (
                 <div className="recipe">
-                    <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+                    <div className="rcp">
+                    <img src={recipe.strMealThumb} alt={recipe.strMeal}  className="rcp-image" />
+                                       <div className="info1">
                     <h1>{recipe.strMeal}</h1>
                     <h6>Category: {recipe.strCategory}</h6>
                     {recipe.strArea ? <h6>Area: {recipe.strArea} </h6> : null}
-                    <p>{recipe.strInstructions}</p>
+                    </div>
+                    </div>
+                    
+                    <div className="info2">
+                    <h1 className="m0">Recipe:</h1>
+                    <p className="rcp-text">{recipe.strInstructions}</p>
                     <table className="centered">
                         <thead>
                             <tr>
-                                <th>Ingredients</th>
-                                <th>Measure</th>
+                                <th className="w50">Ingredients</th>
+                                <th className="w50">Measure</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,8 +52,9 @@ function Recipe() {
                             })}
                         </tbody>
                     </table>
+                    </div>
                     {recipe.strYoutube ? (
-                        <div className="row">
+                        <div className="row center">
                             <h5 style={{ margin: "2rem 0 1.5rem" }}>Video Recipe</h5>
                             <iframe
                                 title={id}
@@ -57,7 +65,7 @@ function Recipe() {
                     ): null}
                 </div>
             )}
-            <button className="btn" onClick={goBack}>
+            <button className="btn goback light-blue" onClick={goBack}>
                 Go Back
             </button>
         </>

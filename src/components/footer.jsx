@@ -1,5 +1,5 @@
 function Footer() {
-    return  < footer className="grey darken-3 page-footer">
+    return  < footer className="light-blue lighten-1 page-footer">
         {/*
         <div className="container">
             <div className="row">}
@@ -19,9 +19,9 @@ function Footer() {
             </div>
         </div>
 */}
-        <div className="grey darken-4 footer-copyright">
-            <div className=" container">
-            © Moskot Daniil 2024
+        <div className="light-blue accent-4 footer-copyright">
+            <div className="container">
+            <a className="names1 grey-text text-lighten-4">© Shevchenko Andrew & Manankov Vladislav TKBO-01-22 2024</a>
             <a className="grey-text text-lighten-4 right" href="#!">Repository</a>
             </div>
         </div>

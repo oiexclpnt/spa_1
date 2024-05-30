@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'FuturaHeader';
+  src: url(/src/fonts/FuturaPT-Heavy.woff);
+}
+@font-face {
+  font-family: 'FuturaRegular';
+  src: url(/src/fonts/FuturaPT-Medium.woff);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'FuturaRegular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,6 +18,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-wrapper, .names1, .card-title{font-family: 'FuturaHeader';}
 
 .preloader-wrapper {
   display: flex;
@@ -43,3 +52,36 @@ iframe {
   width: 600px;
   height: 350px;
 }
+
+.goback{position: fixed;
+right: 4%;
+bottom: 3.8%;}
+
+.rcp-image{height: 350px;
+width:fit-content;}
+
+
+.rcp{display: flex;
+align-items: start;
+flex-direction: row;}
+
+.rcp-text{font-size: 18px;
+text-align: justify;}
+
+.recipe{display: flex;
+  align-items: stretch;
+flex-direction: column;}
+
+.info1{margin-left: 50px;}
+
+.card-action{display: flex;
+justify-content: center;}
+.info2{margin: 30px 0;}
+.input::placeholder {
+  font-family: 'FuturaRegular';
+}
+
+.m0{margin: 0;}
+.w50{width: 50%;}
+.Cont-card{margin-bottom: 2.8rem;}
+.f14{font-size: 18px;}
